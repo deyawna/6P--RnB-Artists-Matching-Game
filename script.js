@@ -6,7 +6,6 @@ let buttonDouble = document.querySelector(".double");
 let buttonShuffle = document.querySelector(".shuffle");
 let buttonFlip = document.querySelector(".flip");
 // Array containing image URLs
-let urlPrefix = "https://cdn.glitch.global/2068f7ab-d5fc-4ac0-9336-36cd57a680e4/";
 let cards = [
 "https://cdn.glitch.global/2068f7ab-d5fc-4ac0-9336-36cd57a680e4/cardBrysonT.jpg?v=1710435408652",
 "https://cdn.glitch.global/2068f7ab-d5fc-4ac0-9336-36cd57a680e4/cardDrake.jpg?v=1710435423856",
@@ -36,7 +35,7 @@ buttonDouble.onclick = function() {
             cards.push(card);
         game.insertAdjacentHTML("beforeend",
             "<div style='background-image: url(" +
-            urlPrefix + card +")' class= 'card'>"
+             card +")' class= 'card'>"
           );
     }
     }
